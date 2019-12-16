@@ -1,0 +1,1971 @@
+{
+	"info": {
+		"_postman_id": "d1d3342b-651a-427d-b071-6f7b855f3bcb",
+		"name": "1dv527",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get Examiner",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users/examiner",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users",
+								"examiner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Examiner",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "15e25a32-9d53-4d9b-a55f-40431a074f89",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"examiner\",\n\t\"password\": \"1dv527\"\n}"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Examiner",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "15e25a32-9d53-4d9b-a55f-40431a074f89",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"region\": \"EU\"\n}"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users/examiner",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users",
+								"examiner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Examiner",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "15e25a32-9d53-4d9b-a55f-40431a074f89",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users/examiner",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users",
+								"examiner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users (need admin jwt)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific User (exists)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users/nidawi",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users",
+								"nidawi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific User (doesn't exist)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users/i_am_a_user_that_doesnt_exist",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users",
+								"i_am_a_user_that_doesnt_exist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User (missing input)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\n}"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User (too short password)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"my_password_is_short\",\n\t\"password\": \"hi\"\n}"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JWT",
+			"item": [
+				{
+					"name": "Request Token (examiner)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b29dc991-853b-462e-8b1a-256f4f03eb5f",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Has JSON body\", () => {",
+									"    pm.response.to.be.json;",
+									"})",
+									"pm.test(\"Response has a token\", () => {",
+									"    pm.expect(pm.response.json().data).to.be.a(\"string\");",
+									"})",
+									"pm.test(\"Token to be saved as env variable\", () => {",
+									"    pm.environment.set(\"jwt\", pm.response.json().data);",
+									"    pm.expect(pm.environment.get(\"jwt\")).to.equal(pm.response.json().data);",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"examiner\",\n\t\"password\": \"1dv527\"\n}"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/token",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Token (admin)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1900402f-8b75-4cc7-a692-ec5df40f07a7",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Has JSON body\", () => {",
+									"    pm.response.to.be.json;",
+									"})",
+									"pm.test(\"Response has a token\", () => {",
+									"    pm.expect(pm.response.json().data).to.be.a(\"string\");",
+									"})",
+									"pm.test(\"Token to be saved as env variable\", () => {",
+									"    pm.environment.set(\"jwt\", pm.response.json().data);",
+									"    pm.expect(pm.environment.get(\"jwt\")).to.equal(pm.response.json().data);",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"nidawi\",\n\t\"password\": \"hejdae\"\n}"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/token",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Token (user does not exist)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"I_do_not_exist\",\n\t\"password\": \"hello\"\n}"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/token",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Token (no user)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/token",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Who Am I",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/token",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "Get Reports",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Reports (by specific owner)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports?owner=examiner",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports"
+							],
+							"query": [
+								{
+									"key": "owner",
+									"value": "examiner"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Reports (by specific owner + class)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports?owner=examiner&class=Archer",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports"
+							],
+							"query": [
+								{
+									"key": "owner",
+									"value": "examiner"
+								},
+								{
+									"key": "class",
+									"value": "Archer"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Reports (by specific class)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports?class=Lahn",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports"
+							],
+							"query": [
+								{
+									"key": "class",
+									"value": "Lahn"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Reports (by specific spot)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports?spot=Hystria Ruins",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports"
+							],
+							"query": [
+								{
+									"key": "spot",
+									"value": "Hystria Ruins"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Reports (by other spot)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports?spot=Aakman Temple",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports"
+							],
+							"query": [
+								{
+									"key": "spot",
+									"value": "Aakman Temple"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Reports (paginated)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports?lastReportId=16",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports"
+							],
+							"query": [
+								{
+									"key": "lastReportId",
+									"value": "16"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Report",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"spot\": 1,\n\t\"owner\": \"examiner\",\n\t\"grinder\": {\n\t\t\"class\": \"Warrior\",\n\t\t\"APmh\": 266,\n\t\t\"APawa\": 269,\n\t\t\"DP\": 307,\n\t\t\"luck\": 5,\n\t\t\"lootScroll\": true,\n\t\t\"arsha\": false,\n\t\t\"castle\": false,\n\t\t\"gmBlessing\": false\n\t},\n\t\"duration\": 180,\n\t\"loot\": [\n\t\t{\n\t\t\t\"itemId\": 11629,\n\t\t\t\"amount\": 1\n\t\t},\n\t\t{\n\t\t\t\"itemId\": 16001,\n\t\t\t\"amount\": 55\n\t\t},\n\t\t{\n\t\t\t\"itemId\": 16002,\n\t\t\t\"amount\": 124\n\t\t},\n\t\t{\n\t\t\t\"itemId\": 40228,\n\t\t\t\"amount\": 32\n\t\t},\n\t\t{\n\t\t\t\"itemId\": 42419,\n\t\t\t\"amount\": 2\n\t\t},\n\t\t{\n\t\t\t\"itemId\": 44267,\n\t\t\t\"amount\": 12752\n\t\t}\n\t]\n}\n"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Report (broken input)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"spot\": 22,\n\t\"owner\": \"exami2ner\",\n\t\"grinder\": {\n\t\t\"class\": \"War2r2ior\"\n\t},\n\t\"duration\": 180,\n\t\"loot\": [\n\t\t{\n\t\t\t\"itemId\": 1,\n\t\t\t\"amount\": 2\n\t\t}\n\t]\n}\n"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Report",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"grinder\":  {\n\t\t\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports/21",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Report",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports/21",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Report",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports/22",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Report Loot",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/reports/13/loot",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"reports",
+								"13",
+								"loot"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hooks",
+			"item": [
+				{
+					"name": "Create a Hook",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"event\": \"reportCreated\",\n\t\"target\": \"http://www.google.com\"\n}"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/hooks",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"hooks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Hook (bad eventType)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"event\": \"some_event\",\n\t\"target\": \"http://www.google.com\"\n}"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/hooks",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"hooks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Hook (bad url)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"event\": \"reportCreated\",\n\t\"target\": \"not_a_url\"\n}"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/hooks",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"hooks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Hooks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/hooks",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"hooks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Hook",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/hooks/4",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"hooks",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Hook",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"event\": \"reportCreated\",\n\t\"target\": \"https://api.tinfoil-academy.me/tests/onreport\"\n}"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/hooks/4",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"hooks",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Hook",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/hooks/3",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"hooks",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Grindspots",
+			"item": [
+				{
+					"name": "Get all Grindspots",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/grindspots",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"grindspots"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Grindspot",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/grindspots/1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"grindspots",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Grindspot Loot",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/grindspots/1/loot",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"grindspots",
+								"1",
+								"loot"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Loot",
+			"item": [
+				{
+					"name": "Get all Loot",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/loot",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"loot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Loot (exists)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/loot/44279",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"loot",
+								"44279"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Loot (non-exists)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/loot/40222842525",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"loot",
+								"40222842525"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "General Errors",
+			"item": [
+				{
+					"name": "Bad \"Accept\" Header",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/css",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bad \"Content Type\" Header",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/html",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "No JWT Provided (Protected Route)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Expired JWT Provided",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV4YW1pbmVyIiwiYWRtaW4iOmZhbHNlLCJpc3MiOiJodHRwczovL2FwaS50aW5mb2lsLWFjYWRlbXkubWUiLCJleHAiOjE1NTE1NDA2MjYzMzF9.iq3AYtSKSG0Oqx8UoFQ8tF_YxlG10YeWvPbxbrECKR8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tampered With JWT Provided",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV4YW1pbmVyIiwiYWRtaW4iOnRydWUsImlzcyI6Imh0dHBzOi8vYXBpLnRpbmZvaWwtYWNhZGVteS5tZSIsImV4cCI6MTU1MTYyMDI1MDgwM30.t1Jj-cjjgG1glCNc22swTF1GlC11_ha1tSGawt4zdUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "JWT with non-exist user provided",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV4YW1pbmVyMiIsImFkbWluIjpmYWxzZSwiaXNzIjoiaHR0cHM6Ly9hcGkudGluZm9pbC1hY2FkZW15Lm1lIiwiZXhwIjoxNTUxNjU4NzI2MjY4LCJpYXQiOjE1NTE2NTUxMjYyNjh9.jtwwB1uGBPJYyBjScuXI2ye0XOD4sqfOG1QqLdIo7nU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me/users",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Rate Limit (spam)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Faulty JSON Body",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "36gasa"
+						},
+						"url": {
+							"raw": "https://api.tinfoil-academy.me",
+							"protocol": "https",
+							"host": [
+								"api",
+								"tinfoil-academy",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.tinfoil-academy.me",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tinfoil-academy",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Classes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.tinfoil-academy.me/classes",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tinfoil-academy",
+						"me"
+					],
+					"path": [
+						"classes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Statistical  Query",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"spotId\": 2\n}"
+				},
+				"url": {
+					"raw": "https://api.tinfoil-academy.me/statistics",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tinfoil-academy",
+						"me"
+					],
+					"path": [
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Statistical  Query (no data)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}"
+				},
+				"url": {
+					"raw": "https://api.tinfoil-academy.me/statistics",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tinfoil-academy",
+						"me"
+					],
+					"path": [
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Statistical  Query (insufficient results)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"spotId\": 3\n}"
+				},
+				"url": {
+					"raw": "https://api.tinfoil-academy.me/statistics",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tinfoil-academy",
+						"me"
+					],
+					"path": [
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{jwt}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "47e40cca-74ae-4280-872f-f7936c1d1da4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "4f52cc6a-4a1d-43cc-ab56-7b9acbf3993f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "326c1301-d965-44b4-9ef6-5d6503e4eea6",
+			"key": "jwt",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

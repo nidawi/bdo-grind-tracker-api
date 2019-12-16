@@ -1,0 +1,35 @@
+{
+  "name": "ja222ts-examination-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "standard",
+    "start": "node tinfoil-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1dv527/ja222ts-examination-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1dv527/ja222ts-examination-2/issues"
+  },
+  "homepage": "https://github.com/1dv527/ja222ts-examination-2#readme",
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "base64url": "^3.0.1",
+    "bcrypt": "^3.0.4",
+    "express": "^4.16.4",
+    "express-rate-limit": "^3.3.2",
+    "helmet": "^3.15.1",
+    "jsonwebtoken": "^8.4.0",
+    "mysql": "github:mysqljs/mysql",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "safe-compare": "^1.1.3"
+  }
+}
