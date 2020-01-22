@@ -1,3 +1,6 @@
+> This application was made as a part of a course about restful api development in 2019. It received a gold star.
+The server has since been taken down.
+
 # Instructions
 
 ## URL to API
